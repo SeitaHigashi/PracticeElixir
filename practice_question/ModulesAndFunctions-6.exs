@@ -6,7 +6,7 @@ defmodule Chop do
     helper(actual, range, now)
   end
 
-  def helper(actual, _, now) when actual == now do
+  def helper(actual, _range, now) when actual == now do
     IO.puts(now)
   end
 
