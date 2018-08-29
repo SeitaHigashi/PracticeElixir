@@ -29,4 +29,9 @@ defmodule MyEnum do
 #  def _split([ head | tail], count) do
 #    []
 #  end
+
+  def take(_, 0), do: []
+  def take([head | tail], count) do
+    [head | take(tail, count-1)]
+  end
 end
