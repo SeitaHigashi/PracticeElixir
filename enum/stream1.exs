@@ -3,4 +3,4 @@
 |> Stream.map(&(&1 + 1))
 |> Stream.filter(fn x -> rem(x,2) == 1 end)
 |> Enum.to_list
-#|> IO.inspect
+|> IO.inspect
